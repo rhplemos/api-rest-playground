@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:rick_and_morty_playground/home/http/http_bindings.dart';
+import 'package:rick_and_morty_playground/home/http/http_page.dart';
 
 import 'home/home_page.dart';
 
@@ -16,11 +18,16 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       getPages: [
         GetPage(
-          name: '/',
-          page: () => HomePage(),
-        )
+            name: '/',
+            page: () => HomePage(),
+            children: [
+              GetPage(
+                  name: '/http',
+                  page: () => HttpPage(),
+                binding: HttpBindings()
+              )
+            ])
       ],
     );
   }
 }
-

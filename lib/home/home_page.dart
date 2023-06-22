@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,7 +14,7 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-                onPressed: () {},
+                onPressed: () => Get.toNamed('/http'),
                 child: Text('HTTP', style: TextStyle(fontSize: 20),)
             ),
             TextButton(
