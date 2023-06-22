@@ -1,4 +1,4 @@
-# api_rest_playground
+# Api Rest Palyground
 
 A new Flutter project.
 
