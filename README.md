@@ -1,4 +1,4 @@
-# rick_and_morty_playground
+# api_rest_playground
 
 A new Flutter project.
 
