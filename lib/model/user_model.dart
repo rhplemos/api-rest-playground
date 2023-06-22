@@ -1,10 +1,8 @@
-import 'package:rick_and_morty_playground/model/user_type.dart';
-
 class UserModel {
   String? id;
   String? name;
   String? username;
-  List<UserType>? types;
+  String? types;
 
 //<editor-fold desc="Data Methods">
   UserModel({
@@ -37,7 +35,7 @@ class UserModel {
     String? id,
     String? name,
     String? username,
-    List<UserType>? types,
+    String? types,
   }) {
     return UserModel(
       id: id ?? this.id,
@@ -61,7 +59,7 @@ class UserModel {
       id: map['id'] as String,
       name: map['name'] as String,
       username: map['username'] as String,
-      types: map['types'] as List<UserType>,
+      types: map['types'] as String,
     );
   }
 
